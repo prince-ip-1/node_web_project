@@ -1,0 +1,247 @@
+html { touch-action: manipulation; }
+body{color:#333333;font-family: 'Montserrat', sans-serif;}
+h1, h2, h3, h4, h5, h6, ul, li, p { list-style: none; margin: 0; padding: 0; }
+a{text-decoration:none;}
+a:hover { text-decoration: none; }
+a:focus {outline:none;}
+button{ cursor: pointer; }
+.btn.focus, .btn:focus { outline: 0; box-shadow: unset;}
+button:focus{ outline: none; }
+img{max-width:100%;}
+
+
+@media (min-width: 1200px){
+.container {width: 1170px;padding-left:15px;padding-right:15px;}
+}
+h2{font-size:50px;font-weight:100;}
+h2 span{font-weight:500;display:inline-block;}
+/*header css*/
+.header{z-index:4;}
+.header .navbar .navbar-brand{padding:0;line-height:90px;}
+.header .navbar .navbar-brand img,.header-sticky img{width:222px;}
+.header .navbar-expand-lg .navbar-nav .nav-link{font-size:13px;font-weight:bold;}
+.sticky .navbar-expand-lg .navbar-nav .nav-link{color:#000000 !important;}
+.sticky{position:fixed !important;left:0;width:100%;top:0; z-index:4;background-color:#fff;border-bottom:1px solid #dedede;top:0;transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);-webkit-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);-moz-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);-o-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);-ms-transition: all 0.27s cubic-bezier(0, 0, 0.58, 1);}
+.navbar{padding:0;}
+.navbar-nav>li{margin-left:10px;} 
+.navbar-nav li:hover > ul.dropdown-menu {display: block;background-color:#0d223e;padding:0;min-width:12rem;border-radius:0;}
+.dropdown .dropdown-menu li a{padding:5px 15px;display:block;color:#999;}
+.dropdown .dropdown-menu li a:hover{background-color:#253852;color:#fff;}
+.dropdown > .dropdown-toggle::after{content:"\f078";font-weight:900; font-family: "Font Awesome 5 Free";border:0;vertical-align:top;margin-left:8px;}
+.dropdown .dropdown-submenu > .dropdown-toggle::after{content:"\f054";font-weight:900; font-family: "Font Awesome 5 Free";border:0;vertical-align:top;position:absolute;right:10px;}
+.dropdown-submenu {position:relative;}
+.dropdown-submenu>.dropdown-menu {top:0;left:100%;}
+
+/*banner css*/
+/*.banner .swiper-slider .swiper-slide:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: rgba(0,0,0,0.4);
+    z-index: 1111;
+}
+*/.banner .swiper-slider .swiper-slide .img img{width:100vw;height:100vh;object-fit:cover;} 
+.banner .swiper-slider .swiper-button-prev{z-index:2; border: 1px solid #fff;border-radius: 50%;height: 50px;width: 50px;position: absolute;top: 50%;transform: translateY(-50%);left:10px;}
+.banner .swiper-slider .swiper-button-next{z-index:2; border: 1px solid #fff;border-radius: 50%;height: 50px;width: 50px;position: absolute;top: 50%;transform: translateY(-50%);right:10px;}
+.banner .swiper-slider .swiper-button-prev:hover,.banner .swiper-slider .swiper-button-next:hover{width:60px;height:60px;}
+.banner .swiper-slider .swiper-button-prev:hover:before,.banner .swiper-slider .swiper-button-next:hover:before{left:18px;}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{content:'';}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{content:"";}
+.banner .swiper-slider .swiper-button-prev:before{content:'\f060';position:absolute;font-weight:900; font-family: "Font Awesome 5 Free";right:14px;color:#fff;font-size:25px;top:50%;transform:translateY(-50%);}
+.banner .swiper-slider .swiper-button-next:before{content:'\f061';position:absolute;font-weight:900; font-family: "Font Awesome 5 Free";left:14px;color:#fff;font-size:25px;top:50%;transform:translateY(-50%);}
+.banner .banner-content{bottom:30%;z-index:2;left:150px;}
+.banner .banner-content a{display: block;width: 130px;line-height: 40px;text-align: center;position: relative;text-decoration: none;color: #fff;font-size: 15px;font-weight: 500;text-transform: uppercase;letter-spacing: 2px;margin-top:30px;}
+.banner .banner-content a:before,
+.banner .banner-content a:after{position: absolute;content: "";transition: all .25s;}
+.banner .banner-content a:before{ border-bottom: 1px solid #fff; border-left: 1px solid #fff; width: 20px; height: 20px;left:0;bottom:0;}
+.banner .banner-content a:after{border-top: 1px solid #fff;border-right: 1px solid #fff;width:20px;height: 20px;top: 0;right:0;}
+.banner .banner-content a:hover:before{width: 130px;height:40px;}
+.banner .banner-content a:hover:after{width: 130px;height: 40px;}
+
+/*Photomania-section css*/
+.Photomania-section{padding-top:100px;padding-bottom:50px;}
+.Photomania-section .Photomania-about .video-about .video-play-button{width:75px;display:block;top:50%;left:50%;transform:translate(-50%,-50%);}
+.Photomania-section .Photomania-about .video-about .video-play-button img { position: relative; z-index: 3; max-width: 100%; width: auto; height: auto; }
+.Photomania-section .Photomania-about .video-about .video-overlay { position: fixed; z-index: -1; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.80); opacity: 0; transition: all ease 500ms; }
+.Photomania-section .Photomania-about .video-about .video-overlay.open {position: fixed;z-index:3;opacity: 1;}
+/*.Photomania-section .Photomania-about .video-about .video-overlay-close { position: absolute; z-index: 3; top: 15px; right: 20px; font-size: 36px; line-height: 1; font-weight: 400; color: #fff; text-decoration: none; cursor: pointer; transition: all 200ms; }*/
+.Photomania-section .Photomania-about .video-about .video-overlay iframe { position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); box-shadow: 0 0 15px rgba(0,0,0,0.75); }
+.Photomania-section .Photomania-about .Photomania-text p:first-of-type{display:inline-block; font-size: 20px;font-weight: 200;letter-spacing: 0.5px;margin-top:10px;margin-bottom:30px;}
+.Photomania-section .Photomania-about .Photomania-text p{font-size: 14px;color: #444;font-weight: 300;line-height: 25px;}
+.Photomania-section .Photomania-about .Photomania-text .photo-tack h3{font-weight:200;font-size:30px;}
+.Photomania-section .Photomania-about .Photomania-text .photo-tack h3 span{font-weight:500;display:inline-block;}
+.Photomania-section .Photomania-about .Photomania-text .photo-tack h3 i{padding-right:20px;}
+.Photomania-section .Photomania-about .Photomania-text .photo-tack{padding:15px 0;}
+.Photomania-section .Photomania-about .Photomania-text  a{display: block;width: 130px;line-height: 40px;text-align: center;position: relative;text-decoration: none;color: #000;font-size: 15px;font-weight: 500;text-transform: uppercase;letter-spacing: 2px;margin-top:20px;}
+.Photomania-section .Photomania-about .Photomania-text  a:before,
+.Photomania-section .Photomania-about .Photomania-text  a:after{position: absolute;content: "";transition: all .25s;}
+.Photomania-section .Photomania-about .Photomania-text  a:before{ border-bottom: 1px solid #000; border-left: 1px solid #000; width: 20px; height: 20px;left:0;bottom:0;}
+.Photomania-section .Photomania-about .Photomania-text  a:after{border-top: 1px solid #000;border-right: 1px solid #000;width:20px;height: 20px;top: 0;right:0;}
+.Photomania-section .Photomania-about .Photomania-text  a:hover:before{width: 130px;height:40px;}
+.Photomania-section .Photomania-about .Photomania-text  a:hover:after{width: 130px;height: 40px;}
+/*counter-section css*/
+.counter-section{background-color:#f5f5f5;margin-bottom:60px;}
+.counter-section .counter-wrapper{background-color:#fff;box-shadow: 16px 21px 38px 0px #ccc;padding: 30px 0;margin: 80px 0;} 
+.counter-section .counter-wrapper .counter-container img{width:70px;height:40px;object-fit:cover;margin-bottom:15px;}
+.counter-section .counter-wrapper .counter-container .counter{font-weight:200;font-size:50px;}
+.counter-section .counter-wrapper .counter-container span{font-weight: 200;margin-top:10px;font-size:20px;display:inline-block;}
+/*gallery-about css*/
+.gallery-about{padding-bottom:30px;}
+.gallery-about .gallery-heading{padding:50px 0;}
+.gallery-about .product-info .row{margin-left:-15px;margin-right:-15px;} 
+.gallery-about .product-info .row .col-xxl-3{padding:0 15px;margin-bottom:40px;}
+.gallery-about .stone-gallery .product-gallery{border:1px solid #ccc;}
+.gallery-about .stone-gallery .product-heading{padding: 15px 20px;border: 1px solid #ccc;border-top: none;box-shadow: 1px 1px 4px -1px #8b898a;height: 51px;}
+.gallery-about .stone-gallery .gallery img{width:100%;height:100%;object-fit:cover;transform:scale(1.1);-webkit-transition: -webkit-transform 0.3s;-moz-transition: -moz-transform 0.3s;-o-transition: -o-transform 0.3s;transition: transform 0.3s;}
+.gallery-about .stone-gallery .gallery:hover img{transform:scale(1);webkit-filter: blur(2px);filter: blur(2px);}
+.gallery-about .stone-gallery .gallery:hover .overlay{opacity:1;}
+.gallery-about .stone-gallery .gallery .overlay{background: rgba(0, 0, 0, 0.5);height: 100%;left: 0;top: 0;right:0;bottom:0; position: absolute;width: 100%;opacity: 0;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s;}
+.gallery-about .stone-gallery .gallery .but-arrow{top:50%;left:50%;transform:translate(-50%,-50%);}
+.gallery-about .stone-gallery .gallery .but-arrow a{color:#fff;border: 1px solid #fff;padding: 7px 13px;}
+.gallery-about .more-btn  a{display: block;width: 180px;line-height: 40px;text-align: center;position: relative;text-decoration: none;color: #000;font-size: 15px;font-weight: 500;text-transform: uppercase;letter-spacing: 2px;margin:50px auto;}
+.gallery-about .more-btn  a:before,
+.gallery-about .more-btn  a:after{position: absolute;content: "";transition: all .25s;}
+.gallery-about .more-btn  a:before{ border-bottom: 1px solid #000; border-left: 1px solid #000; width: 20px; height: 20px;left:0;bottom:0;}
+.gallery-about .more-btn  a:after{border-top: 1px solid #000;border-right: 1px solid #000;width:20px;height: 20px;top: 0;right:0;}
+.gallery-about .more-btn  a:hover:before{width: 180px;height:40px;}
+.gallery-about .more-btn  a:hover:after{width: 180px;height: 40px;}
+.gallery-about .page-item:first-child .page-link,.page-item:last-child .page-link{border-radius:0;}
+.gallery-about .pagination{margin-bottom:30px;}
+.gallery-about .page-item .page-link{margin-right:3px;}
+.gallery-about .page-item.active .page-link{background-color:#337ab7;color:#fff;}
+.gallery-about .page-item .page-link{border: 1px solid #ddd;color: #337ab7;}
+/*Testimonial css */
+.Testimonial{background-color: #f5f5f5;padding: 40px 0 100px;}
+.Testimonial .Testimonial-heading{padding: 60px 0;} 
+.Testimonial .Testimonial-slider{padding-bottom:60px;}
+.Testimonial .swiper-wrapper .swiper-slide .Testimonial-text p{font-size: 14px;color: #444;font-weight: 300;line-height: 25px;}
+.Testimonial .swiper-wrapper .swiper-slide .Testimonial-text{padding: 30px 50px;background-color: #fff;}
+.Testimonial .swiper-wrapper .swiper-slide .testimonial-footer{background: #000;padding: 10px 0;}
+.Testimonial .swiper-wrapper .swiper-slide .testimonial-footer p{font-size: 12px;line-height: 20px;font-weight: 500;}
+.Testimonial .swiper-wrapper .swiper-slide .testimonial-footer span{display:block;font-weight: 200;color: #eee;}
+.Testimonial .Testimonial-slider .swiper-pagination-bullet-active{background-color:#000;}
+.Testimonial .Testimonial-slider .swiper-pagination{z-index:0;}
+/*footer css*/
+.footer{background-color:#0d223e;}
+.footer .footer-top{padding:50px 0;border-bottom:1px solid #444;}
+.footer .footer-top h2{font-weight: 200;font-size:40px;}
+.footer .footer-top p{padding-top:20px;font-weight:300;line-height:25px;font-size:14px;}
+.footer .footer-top .footer-form{width:625px;padding-top:40px;}
+.footer .footer-top .footer-form .input-group .form-control{background: none;border: 1px solid #fff;border-radius: 0px; width: 100% !important;color: #fff;height: 50px;}
+.footer .footer-top .footer-form .Message{padding-top:20px;}
+.footer .footer-top .footer-form .Message .input-group .form-control{width:100%;height:180px;}
+.footer .footer-top .footer-form .submit-btn{bottom:0;right:-28%;}
+.footer .footer-top .footer-form .submit-btn .btn{display: block;width: 130px;line-height: 40px;text-align: center;position: relative;text-decoration: none;color: #fff;font-size: 15px;font-weight: 500;text-transform: uppercase;letter-spacing: 2px;}
+.footer .footer-top .footer-form .submit-btn .btn:before,
+.footer .footer-top .footer-form .submit-btn .btn:after{position: absolute;content: "";transition: all .25s;}
+.footer .footer-top .footer-form .submit-btn .btn:before{ border-bottom: 1px solid #fff; border-left: 1px solid #fff; width: 20px; height: 20px;left:0;bottom:0;}
+.footer .footer-top .footer-form .submit-btn .btn:after{border-top: 1px solid #fff;border-right: 1px solid #fff;width:20px;height: 20px;top: 0;right:0;}
+.footer .footer-top .footer-form .submit-btn .btn:hover:before{width: 130px;height:40px;}
+.footer .footer-top .footer-form .submit-btn .btn:hover:after{width: 130px;height: 40px;}
+.footer .footer-bottom{padding:50px 0;}
+.footer .footer-bottom .footer-contact p{font-size: 14px;font-weight: 300;line-height: 25px}
+.footer .footer-bottom .footer-contact p:first-child{margin-bottom:10px;}
+.footer .footer-bottom .footer-contact p span{display:block;}
+.footer .footer-bottom .footer-contact img{width:300px;}
+.footer .footer-bottom .footer-contact a{color:#fff;}
+.footer .footer-bottom .footer-contact ul li{display:inline-block;padding-left:10px;}
+.footer .footer-bottom .footer-contact ul li a i{font-size:20px;}
+
+/*about-page css*/
+.banner-bg{background:linear-gradient(to left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(to right, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)),url(../images/waterfall.jpg)no-repeat top center / cover ;width:100%;height:500px;}
+.banner .banner-text h1{font-size:100px;mix-blend-mode:color-dodge; -webkit-text-stroke: 1px #fff;}
+/*Photomania-details css*/
+.Photomania-details{padding:100px 0;}
+.Photomania-details .photomania-text h2{font-size:36px;font-weight:500;}
+.Photomania-details .photomania-text span{font-size: 20px;font-weight: 500;letter-spacing: 0.5px;display:block;margin: 15px 0px 8px 0px;}
+.Photomania-details .photomania-text p{text-align:justify;line-height: 28px;padding-top:40px;font-size:14px;font-weight:500;color:#444;}
+.Photomania-details .photomania-text a{display: block;width: 130px;line-height: 40px;text-align: center;position: relative;text-decoration: none;color: #000;font-size: 15px;font-weight: 500;text-transform: uppercase;letter-spacing: 2px;margin:30px auto 0;}
+.Photomania-details .photomania-text a:before,
+.Photomania-details .photomania-text a:after{position: absolute;content: "";transition: all .25s;}
+.Photomania-details .photomania-text a:before{ border-bottom: 1px solid #000; border-left: 1px solid #000; width: 20px; height: 20px;left:0;bottom:0;}
+.Photomania-details .photomania-text a:after{border-top: 1px solid #000;border-right: 1px solid #000;width:20px;height: 20px;top: 0;right:0;}
+.Photomania-details .photomania-text a:hover:before{width: 130px;height:40px;}
+.Photomania-details .photomania-text a:hover:after{width: 130px;height: 40px;}
+/*services-section css*/
+.services-section{background-color:#000;padding-bottom:100px;}
+.services-section .services-heading {padding:60px 0;}
+.services-section .services-slider{padding-bottom:60px;}
+.services-section .swiper-slide img{height:370px;width:100%;object-fit:cover;}
+.services-section .services-slider .img-stories{transition:0.5s linear;height:100px; bottom:-200px;background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);}
+.services-section .services-slider .img-stories h5{margin-bottom:10px;}
+.services-section .services-slider .swiper-slide:hover .img-stories{bottom:0;transition: 0.5s linear;}
+.services-section .services-slider .swiper-pagination-bullet{background-color:#fff;opacity:0.2;}
+.services-section .services-slider .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color:#fff !important;opacity:1;} 
+
+/*photogallery page css*/
+.filter-portfolio{padding:50px 0;}
+.filter-portfolio .nav-tabs{border-bottom:0;margin-bottom:50px;}
+.filter-portfolio .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{margin-left:20px; border-radius:0; color: #000;text-transform: lowercase;padding: 10px 20px;border: 1px solid #000;transition: .2s ease-in;}
+.filter-portfolio .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-item:first-child .nav-link{margin-left:0;}
+.filter-portfolio .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover{background-color:#000;color:#fff;text-decoration:underline;}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{background-color:#000;color:#fff;}
+.gallery-about .row{margin:0;}
+.gallery-about .row .col-xxl-3{padding:5px;}
+
+/*product-page css*/
+.gallery-about .product-header{padding-top:60px;padding-bottom:30px;}
+.gallery-about .product-header h2{font-family: inherit;font-size: 30px;font-weight: 500;line-height: 1.1;text-transform: uppercase;color: inherit;margin-bottom: 15px}
+.gallery-about .product-header p{font-size: 14px;color: #444;font-weight: 300;line-height: 25px;}
+/*contact-page css*/
+.contact-about{padding:100px 0;}
+.contact-about .input-group input{height: 40px;}
+.contact-about .input-group .form-control{margin-bottom:25px;border-radius:0; padding: 5px 20px;font-size: 14px;background: rgba(0, 0, 0, 0);width: 100%;border: 1px solid #000;}
+.contact-about .btn-submit{display: block;width: 130px;line-height: 40px;text-align: center;position: relative;text-decoration: none;color: #000;font-size: 15px;font-weight: 500;text-transform: uppercase;letter-spacing: 2px;margin:30px auto 0;}
+.contact-about .btn-submit:before,
+.contact-about .btn-submit:after{position: absolute;content: "";transition: all .25s;}
+.contact-about .btn-submit:before{ border-bottom: 1px solid #000; border-left: 1px solid #000; width: 20px; height: 20px;left:0;bottom:0;}
+.contact-about .btn-submit:after{border-top: 1px solid #000;border-right: 1px solid #000;width:20px;height: 20px;top: 0;right:0;}
+.contact-about .btn-submit:hover:before{width: 130px;height:40px;}
+.contact-about .btn-submit:hover:after{width: 130px;height: 40px;}
+.contact-about .btn-submit input{border:0;background-color:unset;padding:0;}
+.contact-about .contact-details{margin-bottom:10px;}
+.contact-about .col-xxl-8{padding-right:32px;padding-left:30px;}
+.contact-about .contact-details .Social-media_icon{width: 40px;height: 40px;border-radius: 50px;background: #000;color: #fff;margin-bottom: 10px;}
+.contact-about .contact-details p{font-size: 14px;color: #444;font-weight: 500;line-height:24px;}
+.contact-about .contact-details p a{font-weight:500;font-size:14px;color:#000;}
+
+/*medai css*/
+@media (max-width:991px){
+.header .navbar-toggler{background-color:#fff;}
+.header .navbar-collapse{background-color:#333743;max-height:375px;overflow-y:auto;}
+.header .navbar .navbar-brand{line-height:54px;}
+.navbar-nav>li{margin-left:0px;}
+.header .navbar-nav .nav-link{padding:15px;} 
+.sticky .navbar-expand-lg .navbar-nav .nav-link,.navbar-light .navbar-nav .nav-link{color:#cecece!important;}
+.header .navbar .navbar-brand img, .header-sticky img{width:150px;}
+.counter-section .counter-wrapper .counter-container span{font-size:17px;}
+.gallery-about .stone-gallery .gallery{width:50% !important;}
+.gallery-about .stone-gallery .photogallery,.gallery-about .stone-gallery .product-gallery{width:100% !important;}	
+.footer .footer-top .footer-form .submit-btn{position:relative !important;margin-top:40px;right:-40%;}	
+}
+@media (max-width:767px){
+.banner{margin-top:55px;}	
+.banner .banner-content{bottom:5%;left:100px;}
+h2{font-size:40px;}
+.counter-section .counter-wrapper .row .col-xxl-3.col-xl-3.col-md-3{margin-bottom:40px;}
+.gallery-about .stone-gallery .gallery{width:100% !important;margin-bottom:20px;}
+.gallery-about .stone-gallery .product-gallery{margin-bottom:0;}
+.footer .footer-top .footer-form{width:100%;}
+.footer .footer-top .footer-form .input-group{margin-bottom:20px;}
+.footer .footer-bottom .footer-contact{margin-bottom:40px;text-align:left !important;}
+.banner .banner-text h1{font-size:45px;}
+.contact-about .contact-details{margin-top:30px;}
+}
+@media (max-width:567px){
+.banner-bg{height:250px;}	
+.banner .swiper-slider .swiper-slide .img img{height:50vh;}
+.banner .banner-content{left:50px;}
+.filter-portfolio .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{margin-left:7px;}
+.Photomania-section .Photomania-about .video-about .video-overlay iframe{width:300px;height:200px;}	
+.footer .footer-top .footer-form .submit-btn{right:-30%;}
+h2 {font-size:25px;}
+.filter-portfolio .filter-menu ul li a{padding:10px 15px;}	
+}
