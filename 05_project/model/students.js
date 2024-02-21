@@ -14,7 +14,7 @@ const studentSchema = new mongoose.Schema({
       }
     },
   },
-  mobile_no: {
+  mobile: {
     type: Number,
     minlength: 10,
   },
