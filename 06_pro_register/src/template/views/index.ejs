@@ -1,0 +1,14 @@
+<%- include('../partials/header.ejs') %>
+    <main>
+
+        <% if(sessionData===1) { %>
+            <h1>
+                <%= User.name %>, you are logged in!
+            </h1>
+        <% } else { %>
+
+                <h1>Welcome on Guest page!! </h1>
+       <% } %>
+
+    </main>
+    <%- include('../partials/footer.ejs') %>
