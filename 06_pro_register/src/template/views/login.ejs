@@ -1,0 +1,35 @@
+<%- include('../partials/header.ejs') %>
+    <% if(m !='' ) { %>
+
+        <div class="message">
+            <h1>
+                <%= m %>
+            </h1>
+        </div>
+
+        <% } else { %>
+
+            <% } %>
+                <section class="form_submission">
+                    <div class="container">
+                        <div class="form">
+                            <form action="/login" method="post">
+                                <h1><%- title %></h1>
+                                <div class="inputFieldGroup">
+                                    <input type="email" id="email" name="email" placeholder=" " required />
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="inputFieldGroup">
+                                    <input type="text" id="password" name="password" placeholder=" " required />
+                                    <label for="password">Password</label>
+                                </div>
+
+                                <div class="btn">
+                                    <button>Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+                <%- include('../partials/footer.ejs') %>
